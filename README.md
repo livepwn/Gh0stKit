@@ -39,8 +39,8 @@ cd gh0st
 
 ```
 python gh0st.py 
-or 
-chmod +x gh0st.py
+
+Alert: Donot run this tool with sudo or chmod.
 ```
 ### Usage
 #### Main Menu
