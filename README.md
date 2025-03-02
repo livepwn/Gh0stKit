@@ -1,6 +1,6 @@
 # gh0stkit - A Multi-Purpose Exploitation Toolkit
 
-![gh0stkit](https://dynamic.design.com/asset/logo/0b39ad2f-a5c4-4922-8247-de56853d0d68/logosearch-grid-1x?logoTemplateVersion=1&v=638723018849270000&text=gh0stkit)
+![gh0stkit](https://i.pinimg.com/736x/90/44/f3/9044f3f6d0aba2ebb7196b4141b4fa70.jpg)
 
 
 
