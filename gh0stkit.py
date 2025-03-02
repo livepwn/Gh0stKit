@@ -23,7 +23,7 @@ def print_banner():
  | |`--. .--`| |
 | |'---` `---'| |
 '.__. gh0st  .__.'
-    `|     |`
+    `|  kit |`
      |     |
      |      '--.
       '.        `|
@@ -36,7 +36,7 @@ def print_banner():
 
 def print_interface():
     print_banner()
-    print(Back.BLACK + Fore.GREEN + Style.BRIGHT + "  + -- [ gh0st v1 ]" + Fore.YELLOW + Style.BRIGHT + "  - BETA" + Style.RESET_ALL)
+    print(Back.BLACK + Fore.GREEN + Style.BRIGHT + "  + -- [ gh0stkit v1 ]" + Fore.YELLOW + Style.BRIGHT + "  - BETA" + Style.RESET_ALL)
     print(Back.BLACK + Fore.GREEN + Style.BRIGHT + "  + -- [ 5 shellcode ]" + Style.RESET_ALL)
     print(Back.BLACK + Fore.GREEN + Style.BRIGHT + "  + -- [ 4 encoders ]" + Style.RESET_ALL)
     print(Back.BLACK + Fore.GREEN + Style.BRIGHT + "  + -- [ 1 injector ]" + Style.RESET_ALL)
@@ -46,7 +46,7 @@ def print_interface():
     print(Back.BLACK + Fore.YELLOW + Style.BRIGHT + "      |  (ShellCodes/executable files)" + Style.RESET_ALL)
     print(Back.BLACK + Fore.YELLOW + Style.BRIGHT + "      |  (PE, ELF, DLL, RAR, DEB etc...)" + Style.RESET_ALL)
     print(Back.BLACK + Fore.YELLOW + Style.BRIGHT + "      |  (ReverseShell)" + Style.RESET_ALL)
-    print(Back.BLACK + Fore.RED + Style.BRIGHT + "         |  https://github.com/livepwn/gh0st" + Style.RESET_ALL)
+    print(Back.BLACK + Fore.RED + Style.BRIGHT + "         |  https://github.com/livepwn/gh0stkit" + Style.RESET_ALL)
 
 
 from Crypto.Cipher import AES
@@ -65,7 +65,7 @@ class ToolKit:
     def run(self):
 
         while True:
-            print(Back.BLACK + Fore.CYAN + Style.BRIGHT + "\ngh0st> " + Style.RESET_ALL, end="")
+            print(Back.BLACK + Fore.CYAN + Style.BRIGHT + "\ngh0stkit> " + Style.RESET_ALL, end="")
             cmd = input("").strip().split()
             if not cmd:
                 continue
@@ -100,7 +100,7 @@ class ToolKit:
                .  :::.' gh0st  -  .::::'_   _.:
              .-''---' .'|      .::::'   '''::::
             '. ..-:::'  |    .::::'        ::::
-             '.' ::::    | .::::'          ::::
+             '.' ::::    | .::::'   kit   ::::
                   ::::   .::::'           ::::
                    ::::.::::'._          ::::
                     ::::::' /  '-      .::::
@@ -177,7 +177,7 @@ class ShellcodeModule:
         print("Shellcode Module")
         print("Type 'help' for available commands.")
         while True:
-            print(Back.BLACK + Fore.CYAN + Style.BRIGHT + "\ngh0st/shellcode > " + Style.RESET_ALL, end="")
+            print(Back.BLACK + Fore.CYAN + Style.BRIGHT + "\ngh0stkit/shellcode > " + Style.RESET_ALL, end="")
             cmd = input("").strip().split()
             if not cmd:
                 continue
@@ -354,7 +354,7 @@ class BackdoorModule:
         print("Backdoor Module")
         print("Type 'help' for available commands.")
         while True:
-            print(Back.BLACK + Fore.CYAN + Style.BRIGHT + "\ngh0st/backdoor> " + Style.RESET_ALL, end="")
+            print(Back.BLACK + Fore.CYAN + Style.BRIGHT + "\ngh0stkit/backdoor> " + Style.RESET_ALL, end="")
             cmd = input("").strip().split()
             if not cmd:
                 continue
@@ -462,7 +462,7 @@ class InjectorModule:
         print("Injector Module")
         print("Type 'help' for available commands.")
         while True:
-            print(Back.BLACK + Fore.CYAN + Style.BRIGHT + "\ngh0st/injector> " + Style.RESET_ALL, end="")
+            print(Back.BLACK + Fore.CYAN + Style.BRIGHT + "\ngh0stkit/injector> " + Style.RESET_ALL, end="")
             cmd = input("").strip().split()
             if not cmd:
                 continue
@@ -575,7 +575,7 @@ class EncoderModule:
         print("Encoder Module")
         print("Type 'help' for available commands.")
         while True:  # Main loop for the encoder module
-            print(Back.BLACK + Fore.CYAN + Style.BRIGHT + "\ngh0st/encoder> " + Style.RESET_ALL, end="")
+            print(Back.BLACK + Fore.CYAN + Style.BRIGHT + "\ngh0stkit/encoder> " + Style.RESET_ALL, end="")
             cmd = input("").strip().split()
             if not cmd:
                 continue  # Skip to the next iteration if no command is entered
@@ -693,7 +693,7 @@ class ExecutableModule:
         print(Fore.GREEN + "Executable Generation Module")
         print("Type 'help' for available commands." + Style.RESET_ALL)
         while True:
-            print(Back.BLACK + Fore.CYAN + Style.BRIGHT + "\ngh0st/executable> " + Style.RESET_ALL, end="")
+            print(Back.BLACK + Fore.CYAN + Style.BRIGHT + "\ngh0stkit/executable> " + Style.RESET_ALL, end="")
             cmd = input("").strip().split()
             if not cmd:
                 continue
