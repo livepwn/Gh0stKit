@@ -1,6 +1,6 @@
 # hahasecure - A Multi-Purpose Exploitation Toolkit
 
-![hahasecure](https://i.pinimg.com/736x/90/44/f3/9044f3f6d0aba2ebb7196b4141b4fa70.jpg)
+![hahasecure](https://i.pinimg.com/236x/b0/0c/92/b00c92e2a04a1ce04e31ff53205bad4f.jpg)
 
 
 
